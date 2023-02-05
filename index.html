@@ -28,9 +28,9 @@
     
 
     <!-- Part 2 -->
-    <br>
     <hr>
     <br>
+    <hr>
 
     
         <a href="https://www.google.com/" target=_self title="Google.com" >Google</a>
@@ -48,20 +48,21 @@
         <a href="mailto:snehaasinghhss13@gmail.com" target="_self" title="Mail">Email-Me</a>
         <!-- Here we can use mailto: which will direct to the mail and the person whose mail is here we can directly able to mail that person -->
 
-        <br>
         <hr>
         <br>
+        <hr>
 
 
     <!-- Part 3 -->
+    <!-- Add some images into the html page -->
 
     <img src="/Image/BackMuscle.img.jpg" width="600" title="Adarsh Back Muscles" alt="BackMuscle.img">
     <!-- Here we can set width and hight attribute to set a image as the work required -->
     <!-- Here alt means what if image is not able to load in the customer end then we can type a Brief or a short info about the image in the alt as a Discription,as well as title when we hover the curson then it will give the detail about the image. -->
 
-    <br>
     <hr>
     <br>
+    <hr>
 
     <!-- What if we want to make a image to a hyper-link -->
     <a href="https://en.wikipedia.org/wiki/List_of_Dodge_vehicles">
@@ -69,11 +70,12 @@
     </a>
     <!-- Inside the anchor tag with the image tag in herf after then in the src we will paste the link of the image then set title,then alt:- When the image is not able to load. -->
 
-    <br>
     <hr>
     <br>
+    <hr>
 
     <!-- Part 4 -->
+    <!-- Add some Audio file in the Html Page -->
 
     <!--Like this way we can create a single Audio -->
     <audio controls muted autoplay loop src="Audio/Jhanjra - Karan Randhawa.mp3"title="Karan Randhawa Jhanjra Song MP3" >Karandhawa Song Jhanjra</audio>
@@ -90,6 +92,142 @@
         <!--All these attributes are very usefull -->
         This Browseer does not support HTML audio>
     </audio>
+
+    <hr>
+    <br>
+    <hr>
+
+    <!-- Part 5 -->
+    <!--Add Mp4 vedios in the Html Page -->
+    <video controls muted autoplay loop src="/Vedio/Deepanshu Reel vedio.MOV" width=" 400" height="700" title="Deepanshu Reels">Deepanshu Reel</video>
+    <br>
+    <br>
+    <video controls muted autoplay loop src="/Vedio/IMG_0532.mov" width="400" height="700" title="College Time">College Days</video>
+    <!-- Rest of all same like Audio Part 4 - In case we have some other format of the same vedio then we can also add it with multiple source.
+    Example:- <vedio>
+                 source src="Filename.mp4"
+                 source src="Filename.WebM"
+              </video>   
+    -->
+
+    <hr>
+    <br>
+    <hr>
+
+    <!-- Part 6 -->
+    <!-- HTML text formatting tags(b , i , u/ins , big , small , sub , sup , del , mark ) -->
+    <p>This is a Normal Text</p>
+    <p>This is a <b>BOLD</b> Text</p>
+    <p>This is a <i>ITALIC</i> Text</p>
+    <p>This is a <u>UNDERLINE</u> Text</p>
+    <p>This is a <Big>BIG</Big> Text</p>
+    <p>This is a <Small>smaller</Small> Text</p>
+    <p>This is a <sub>SUB SCRIPT</sub> Text</p>
+    <p>This is a <sup>SUPER SCRIPT</sup> Text</p>
+    <p>This is a  <ins>Inserted Text</ins> Text</p>
+    <p>This is a  <del>DELETED TEXT</del> Text</p>
+    <p>This is a  <mark>Marked Text</mark> Text</p>
+    
+    <hr>
+    <br>
+    <hr>
+
+    <!-- Part 7 -->
+    <!-- List in HTML -->
+<!-- Unordered List -->
+    <h4>Unordered List</h4>
+    <ul>
+        <li>Chocolate
+            <ul>
+                <li>Milk Chocolate</li>
+                <ul>
+                    <li>Pasturized Milk</li>
+                    <li>Toned Milk</li>
+                    <li>Almond Milk</li>
+                    <li>Full Cream Milk</li>
+                </ul>
+                <li>Dark Chocolate</li>
+                <li>Silk Chocolate</li>
+                <li>Oreo Chocolate</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+        <ul>
+            <li>Chocolate Milk</li>
+            <li>Strawberry Milk</li>
+            <li>Caramel Milk</li>
+            <li>Elichi Milk</li>
+        </ul>
+        <li>Biscuts</li>
+        <li>Coffee</li>
+    </ul>
+
+<!-- Ordered List -->
+    <h4>Ordered List</h4>
+    <ol>
+        <li>Boil Water</li>
+        <li>Add Milk</li>
+        <li>Add Tea</li>
+        <li>Add Sugar</li>
+        <li>Serve In Glass</li>
+    </ol>
+
+<!-- Description List -->
+    <h4>Description List</h4>
+    <dl>
+        <dt> <!--Description Term-->
+            HTML:-
+        </dt>
+        <dd> <!--Description Defintion-->
+            This adds structure to a webpage
+        </dd>
+
+        <dt>CSS:- </dt>
+        <dd>
+            This adds style to a webpage
+        </dd>
+
+        <dt>
+            Java Script:- 
+        </dt>
+        <dd>
+            This adds functionality to a webpage
+        </dd>
+    </dl>
+
+
+    <hr>
+    <br>
+    <hr>
+    <!-- Part 8 -->
+    <!-- Create Table in HTML -->
+    <h3>Workout Plan</h3>
+
+    <table bgcolor="Black" width="800px">
+        <tr bgcolor="Gray"><!--Tabl Row and in table row we are setting table color to gray-->
+            <th width="100px">Sunday</th><!--Table Header and in table header we are setting its width so that content can be inside this length-->
+            <th width="100px">Monday</th>
+            <th width="100px">Tuesday</th>
+            <th width="100px">Wedday</th>
+            <th width="100px">Thursday</th>
+            <th width="100px">Fridayday</th>
+            <th width="100px">Saturday</th>
+        </tr>
+        <tr bgcolor="lightGray" align="center"><!--Here in Table row we set color light gray and we just align the text in the center-->
+            <td>Rest</td>
+            <td>Chest Workout</td>
+            <td>Biceps Workout</td>
+            <td>Back Workout</td>
+            <td>Triceps Workout</td>
+            <td>Shoulder Workout</td>
+            <td>Legs Workout</td>
+        </tr>
+        <!-- Inside the table we have maainly 3 things
+        1> tr :- Which means table row
+        2> th :- Which means table header
+        3> td :- Which means table data
+        -->
+    </table>
 
     </body>
 
