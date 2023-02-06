@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON</title>
+</head>
+<body style="background-color: rgb(15, 255, 247);">
+    <a href="https://google.com">
+        <button style="color: rgb(20, 239, 20);  background-color: #333; border-radius: 5px;">CLICK ME</button>
+    </a>
+    <!-- Inside the anchor tag if we will use the button tag then it will help in to navigate to the website where , or for we use the anchor tag -->
+    
+    <hr>
+    <button disabled style="color: rgb(20, 239, 20);  background-color: #333; border-radius: 5px;">CLICK ME</button>
+        <!-- This is a disabled button -->
+
+        <hr>
+
+    <a href="index.html">
+        <button style="border-radius: 5px;">Go to index.html</button>
+    </a> 
+    
+    <hr>
+
+    <a href="index2.html">
+        <button onchange="tap()" style="border-radius: 5px; background-color: chartreuse;color: black; font-family: serif; font-size: medium;">Go to index2.html</button>
+        <!-- Here we set botton bolor, color of font, botton radius , font size and font style in the botton tag-->
+    </a>    
+
+    <hr>
+
+    <button onclick="tap()" style="color: rgb(20, 239, 20);  background-color: #333; border-radius: 5px;">PRESS</button>
+    <!-- Here in Button Tag in Html we have use a onclick attribute which will take the function name in the double Quotes, and after that we have used some basic coloring and designing work -->
+
+    <p id="Text" style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 900;">HELLO!</p>
+    <!-- Here in the paragraph tag we have used id attribute which will help in to idenfity the text, this tell on which text we want to work by this id specifically -->
+
+    <!-- This is a javascript tag named script which we will use later to make this page dynamic -->
+    <script>
+        function tap(){
+            document.getElementById("Text").innerHTML = "Let's Code In"
+            // document.getElementById will take the id in the parameter as a argument to change & In the inner html we can set the Text that we want to display
+        }
+    </script>
+
+    
+</body>
+</html>
