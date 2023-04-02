@@ -13,5 +13,60 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis officiis qui atque! Consequatur dolorem unde quas temporibus,
         deleniti optio laudantium saepe consequuntur necessitatibus tenetur iure similique incidunt dolor omnis ab vel corrupti ad
         modi facilis laborum veniam nesciunt fugiat neque atque. Illum tempora maxime asperiores aperiam dolorum corporis sequi possimus.</p>
+
+        <hr>
+        <br>
+        <hr>
+
+        <H2>How to create a Table</H2>
+
+        <Table style="border:solid black;">
+            <caption>MY MARKSHEET</caption>
+            <colgroup>
+                <col span="2" style="background-color: chartreuse;">
+                <col span="1" style="background-color: aqua;">
+            </colgroup>
+
+
+
+            <thead style="background-color: cadetblue;"> <!--This the table header-->
+                <tr>
+                    <th style="border:solid black;" >Subjects</th>
+                    <th style="border:solid black;" >Marks</th>
+                    <th style="border:solid black;" >Grade</th>
+                </tr>
+            </thead>
+            
+            <tbody> <!--This the table body-->
+                <tr>
+                    <td style="border:solid black;">Maths</td>
+                    <td style="border:solid black;">70</td>
+                    <td style="border:solid black;">B+</td>
+                </tr>
+                <tr>
+                    <td style="border:solid black;">Physics</td>
+                    <td style="border:solid black;">91</td>
+                    <td style="border:solid black;">A+</td>
+                </tr>
+                <tr>
+                    <td style="border:solid black;">Chemistry</td>
+                    <td style="border:solid black;">92</td>
+                    <td style="border:solid black;">A+</td>
+                </tr>
+                <tr>
+                    <td style="border:solid black;">Biology</td>
+                    <td style="border:solid black;">81</td>
+                    <td style="border:solid black;">A</td>
+                </tr>
+            </tbody>
+
+            <tfoot style="background-color: cornflowerblue;"> <!--This the table footer-->
+                <tr>
+                    <th colspan="2" >PASSED</th>
+                    <th>YES</th>
+                </tr>
+            </tfoot>
+        </Table>
+
 </body>
 </html>
