@@ -1,0 +1,266 @@
+:root{
+    --primary-color:red;
+    --dark-color:#141414;
+}
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+ 
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("./netflix-wallpapers.jpg") no-repeat center center/cover;
+    /* opacity: 0.8; */
+}
+
+
+
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0 ,0 ,0 ,0.7);
+    box-shadow: inset 120px 100px 250px #000 , inset -120px -100px 250px #000;
+}
+
+.rightArrowIcon{
+    height: 18px;
+}
+
+
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+
+    /* left: 50%; */
+}
+.showcase-image{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    z-index: 2;
+}
+
+.showcase-content h1{
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.1rem;
+    margin:0 0 2rem;
+}
+
+.showcase-content p{
+    text-transform: uppercase;
+    margin:2rem 0 2rem ;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+}
+
+
+
+
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn.btn-xl{
+    font-size: 1.5rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Section */
+
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionLogo{
+    height: 27px;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem ;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#tab-2-content .tab-2-content-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* .tab-2-content-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+} */
+
+.DevicesImage{
+    height: 180px;
+}
+
+.text-md{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* utility .btn */
+.btn{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding:0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right:0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
+
+.tabs p{
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+}
+
+.tabs .container > div{
+    padding: .7rem 0;
+}
+
+.tabs .container > div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.tab-Content{
+    padding: 3rem 0;
+    background: #000;
+}
+
+#tab-content-1 .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabContent1{
+    width: 500px;
+}
+
+/* utility continer */
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.text-lg{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
