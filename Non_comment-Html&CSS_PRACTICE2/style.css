@@ -40,7 +40,6 @@ p{
 }
 
 
-
 .showcase::after{
     content: '';
     position: absolute;
@@ -57,8 +56,6 @@ p{
     height: 18px;
 }
 
-
-
 .showcase-top{
     position: relative;
     z-index: 2;
@@ -73,8 +70,6 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 .showcase-top a {
     position: absolute;
@@ -109,10 +104,6 @@ p{
     line-height: 1.25rem;
 }
 
-
-
-
-
 .btn:hover{
     opacity: 0.9;
 }
@@ -129,7 +120,6 @@ p{
 }
 
 /* Section */
-
 .tabs{
     background: var(--dark-color);
     padding-top: 1rem;
@@ -168,14 +158,38 @@ p{
     margin: 1rem 0;
 }
 
-/* .tab-2-content-bottom{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-} */
-
 .DevicesImage{
-    height: 180px;
+    height: 10em;
+    margin-top: 2rem;
+}
+
+.table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding: 0.8rem;
+    color: #fff;
+}
+
+.table tbody tr td{
+    color: #999;
+    padding: 0.8rem ;
+    text-align: center;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd){
+
+    background-color: #222;
+
 }
 
 .text-md{
@@ -184,14 +198,6 @@ p{
     margin-bottom: 1rem;
     color: #fff;
 }
-
-
-
-
-
-
-
-
 
 /* utility .btn */
 .btn{
@@ -226,12 +232,27 @@ p{
     border-bottom: var(--primary-color) 4px solid;
 }
 
+
+/* Hide content initailly */
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+    display: none;
+}
+
+/* show */
+.show{
+    display: block !important;
+}
+
 .tab-Content{
     padding: 3rem 0;
     background: #000;
+    color: #fff;
 }
 
-#tab-content-1 .tab-1-content-inner{
+#tab-1-content .tab-1-content-inner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -263,4 +284,115 @@ p{
 
 .text-dark{
     color: #999;
+}
+
+
+/* Footer */
+footer{
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+
+}
+
+.footer li{
+    line-height: 1.9rem;
+}
+
+.footer, .footer a{
+color: #999;
+font-size: 0.9rem;
+}
+
+.footer a{
+    margin: 1.5rem;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 960px){
+    .showcase{
+        height: 70vh;
+    }
+
+    .hide-sm{
+        display: none;
+    }
+
+    .showcase-top img{
+        top: 0%;
+        left: 5%;
+        transform: translate(10px);
+    }
+
+    .showcase-content h1{
+        font-size: 3.7rem;
+        line-height: 1rem;
+    }
+
+    .showcase-content p{
+        font-size: 1.4rem;
+    }
+
+    .btn-xl{
+        font-size: 1.5rem;
+        padding: 1.4rem 2rem;
+    }
+
+    .footer-cols{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .text-lg{
+        font-size: 1.3rem;
+    }
+    .text-xl{
+        font-size: 1.5rem;
+    }
+    .text-md{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:700px){
+
+    .showcase::after{
+    box-shadow: inset 80px 70px 150px #000 , inset -80px -70px 150px #000;
+    }
+
+    #tab-1-content .tab-1-content-inner{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-top{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-bottom{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media(max-width:1000px){
+    #tab-2-content .tab-2-content-bottom{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
