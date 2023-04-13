@@ -1,68 +1,68 @@
-:root{
-    --primary-color:red;
-    --dark-color:#141414;
+/* Global Styles */
+:root {
+	--primary-color: #e50914;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
 }
 
-*{
-    padding: 0;margin: 0;box-sizing: border-box;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: #000;
-    color: #999;
-}
- 
-ul{
-    list-style: none;
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #000;
+	color: #999;
 }
 
-h1, h2, h3, h4{
-    color: #fff;
+ul {
+	list-style: none;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
+h1,
+h2,
+h3,
+h4 {
+	color: #fff;
 }
 
-p{
-    margin: 0.5rem 0;
+a {
+	color: #fff;
+	text-decoration: none;
 }
 
-.showcase{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url("./netflix-wallpapers.jpg") no-repeat center center/cover;
-    /* opacity: 0.8; */
+p {
+	margin: 0.5rem 0;
 }
 
-
-.showcase::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: rgba(0 ,0 ,0 ,0.7);
-    box-shadow: inset 120px 100px 250px #000 , inset -120px -100px 250px #000;
+.showcase {
+	width: 100%;
+	height: 93vh;
+	position: relative;
+	background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
 }
 
-.rightArrowIcon{
-    height: 18px;
+.showcase::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
-.showcase-top{
-    position: relative;
-    z-index: 2;
-    height: 90px;
-
-    /* left: 50%; */
+.showcase-top {
+	position: relative;
+	z-index: 2;
+	height: 90px;
 }
+
 .showcase-image{
     width: 170px;
     position: absolute;
@@ -135,8 +135,19 @@ p{
     text-align: center;
 }
 
-.sectionLogo{
-    height: 27px;
+
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tabContent1{
+    width: 500px;
 }
 
 #tab-2-content .tab-2-content-top{
@@ -156,11 +167,6 @@ p{
     align-items: center;
     text-align: center;
     margin: 1rem 0;
-}
-
-.DevicesImage{
-    height: 10em;
-    margin-top: 2rem;
 }
 
 .table{
@@ -232,36 +238,25 @@ p{
     border-bottom: var(--primary-color) 4px solid;
 }
 
-
-/* Hide content initailly */
-
+/* Hide initial content */
 #tab-1-content,
 #tab-2-content,
-#tab-3-content{
-    display: none;
+#tab-3-content {
+	display: none;
+	opacity: 0;
 }
 
 /* show */
-.show{
-    display: block !important;
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
 }
 
 .tab-Content{
     padding: 3rem 0;
     background: #000;
     color: #fff;
-}
-
-#tab-1-content .tab-1-content-inner{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.tabContent1{
-    width: 500px;
 }
 
 /* utility continer */
@@ -285,7 +280,6 @@ p{
 .text-dark{
     color: #999;
 }
-
 
 /* Footer */
 footer{
@@ -318,81 +312,109 @@ font-size: 0.9rem;
 
 /* Media Queries */
 
-@media(max-width: 960px){
-    .showcase{
-        height: 70vh;
-    }
+@media (max-width: 960px) {
 
-    .hide-sm{
-        display: none;
-    }
-
-    .showcase-top img{
-        top: 0%;
-        left: 5%;
-        transform: translate(10px);
-    }
-
-    .showcase-content h1{
-        font-size: 3.7rem;
-        line-height: 1rem;
-    }
-
-    .showcase-content p{
-        font-size: 1.4rem;
-    }
-
-    .btn-xl{
-        font-size: 1.5rem;
-        padding: 1.4rem 2rem;
-    }
-
-    .footer-cols{
-        grid-template-columns: repeat(2 , 1fr);
-    }
-
-    .text-lg{
-        font-size: 1.3rem;
-    }
-    .text-xl{
-        font-size: 1.5rem;
-    }
-    .text-md{
-        font-size: 1rem;
-    }
-
+    .showcase {
+    height: 100vh;
 }
 
-@media (max-width:700px){
-
-    .showcase::after{
-    box-shadow: inset 80px 70px 150px #000 , inset -80px -70px 150px #000;
-    }
-
-    #tab-1-content .tab-1-content-inner{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    #tab-2-content .tab-2-content-top{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    #tab-2-content .tab-2-content-bottom{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+.hide-sm {
+    display: none;
 }
 
+.showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+}
 
-@media(max-width:1000px){
-    #tab-2-content .tab-2-content-bottom{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+.showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+}
+
+.showcase-content p {
+    font-size: 1.5rem;
+}
+
+.footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+    text-transform: uppercase;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.text-md {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 700px) {
+.showcase::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+}
+
+.showcase-content h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.showcase-content p {
+    font-size: 1rem;
+}
+
+#tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.btn-xl {
+    font-size: 1rem;
+    padding: 1.2rem 1.6rem;
+    text-transform: uppercase;
+}
+}
+
+@media(max-height: 600px) {
+.showcase-content {
+margin-top: 3rem;
+}
+}
+
+/*Images Resizing*/
+
+.DevicesImage{
+    height: 10em;
+    margin-top: 2rem;
+}
+
+.rightArrowIcon{
+    height: 18px;
 }
